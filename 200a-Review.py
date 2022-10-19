@@ -45,10 +45,6 @@ def getIntersection(list1,list2):
     return common
 
 def getUnion(list1,list2):
-    # list 1: expected list or tuple
-    # list 2: expected list or tuple
-    # return a list of numbers that is in either of the lists
-    # the union of the 2 number sets
     union = []
     for a in list1:
         union.append(a)
@@ -58,11 +54,9 @@ def getUnion(list1,list2):
     return union   
 
 def getMerge(list1,list2):
-    # list 1: expected list or tuple
-    # list 2: expected list or tuple
-    # add the elements of list2 into list1
-    # if the list2 element is in list1, add it at the position where it occurs in list1
-    # if the list2 element is not in list1, add it to the end
+    for b in list2:
+        if b not in list1:
+            union.append(b)
     merge = list.copy()
 
     return merge
